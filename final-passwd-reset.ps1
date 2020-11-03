@@ -1,12 +1,14 @@
+
+[CmdletBinding()]
 param(
-    [Parameter(Mandatory=$true)] [string] $ResourceGroupName,
-	[Parameter(Mandatory=$true)] [string] $SeverName,
-	[Parameter(Mandatory=$true)] [string] $KeyVaultName,
-	[Parameter(Mandatory=$true)] [string] $SecretName,
-	[Parameter] [string] $SKU,
-	[Parameter] [string] $location,
-	[Parameter] [string] $userObjectId
-	 )
+        $ResourceGroupName,
+	$SeverName,
+	$KeyVaultName,
+	$SecretName,
+	$SKU,
+	$location,
+	$userObjectId
+)
 
 
  $sqlserver = Get-AzureRmSqlServer -ResourceGroupName $ResourceGroupName
