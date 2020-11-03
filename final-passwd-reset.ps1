@@ -4,10 +4,7 @@ param(
         $ResourceGroupName,
 	$SeverName,
 	$KeyVaultName,
-	$SecretName,
-	$SKU,
-	$location,
-	$userObjectId
+	$SecretName
 )
 
 
